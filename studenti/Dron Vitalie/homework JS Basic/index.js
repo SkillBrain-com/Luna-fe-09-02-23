@@ -28,3 +28,13 @@ if (numar % 2 === 0) {
 } else {
   console.log("impar");
 }
+function add(a, b) {
+  let suma = a + b;
+  console.log(suma);
+}
+add(1, 2);
+
+function greet(nume) {
+  console.log("Salut, " + nume + "!");
+}
+greet("Ana");
