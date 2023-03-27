@@ -21,7 +21,7 @@ console.log(num1 === num2); // rezultatul primit este "false";
 
 for (i = 1; i <= 10; i++) {
   if (i % 2 == 0) {
-    console.log([i], ["este par"]);
+    console.log([i], ["este par"]); // Bunu Constatnin:=> De ce variabila i ai pus in array ?
   } else {
     console.log([i], ["este impar"]);
   }

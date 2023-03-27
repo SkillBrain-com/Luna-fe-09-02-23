@@ -1,5 +1,5 @@
 //Variables and Data Types
-let name = "Beniamin";
+let name1 = "Beniamin";
 let age = 22;
 let isStudent = true;
 let favoriteFoods = ["spaghete", "pizza", "mar"];
@@ -8,7 +8,25 @@ const person = {
     age: 22,
     isStudent: true,
     favoriteFoods: ["spaghete", "pizza", "mar"],
-};
+}; 
+// este inca o varianta de a asigna valoare la key in object, in loc de a folosi valoare harcoded, putem folosi variabilele de mai sus declarate
+// Ca exemplu
+    // const person1 = {
+    //     name: name1,
+    //     age: age,
+    //     isStudent: isStudent,
+    //     favoriteFoods: favoriteFoods,
+    // }
+
+    // La fel, proprietatile se pot chema object.key and object[key], ele sunt la fel, dar diferenta este ca in primul caz lucreaza daca key name este hardwired (am invedere nu apare dinamic) si ii stim numele,
+    // iar in a doilea caz se foloseste cind dinamic dorim sa primim valorile de la key, in cazul in care stim key name la proprietate, putem chema valorea cu prima metoda. A doua se foloseste mai des intr-un for-loop
+    // sau in alt caz cind dinamic accesam valuare.
+
+    // console.log(person1.name);
+    // console.log(person1.age);
+    // console.log(person1.isStudent);
+    // console.log(person1.favoriteFoods);
+
 console.log(person["name"]);
 console.log(person["age"]);
 console.log(person["isStudent"]);
@@ -26,12 +44,24 @@ for(let i=1; i<11; i++) {
     console.log(i);
 }
 
-var num3 = 12;
+var num3 = 12; 
 if(num3 % 2 === 0) {
     console.log("este numar par");
 } else {
     console.log("este numar impar");
 }
+
+
+// putem crea o functie si sa implementam aceasta logica, pentru a face mai dinamic
+// function isEven (num) {
+//   if (num % 2 === 0) {
+//     console.log("par");
+//   } else {
+//     console.log("impar");
+//   }
+// }
+// isEven(num3);
+// isEven(num3+1);
 
 //Functions
 function add(n1, n2) {
@@ -41,6 +71,7 @@ function add(n1, n2) {
 add(10, 20);
 
 function greet(k) {
+    // in asa caz putem deodata sa folosim valoare din parametru, fara a o asigna la o variabila "console.log(k)"
     let comentariu = k;
     console.log(comentariu);
 }
