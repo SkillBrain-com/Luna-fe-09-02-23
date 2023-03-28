@@ -1,13 +1,12 @@
 const defaultResult = 0;
 let currentResult = defaultResult
 
-function add(num1, num2)
-let currentResult = defaultResult;
 
 function createOutputDescription(operator, resultBeforeCalc, calcNumber) {
   const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
   outputResult(currentResult, calcDescription);
 }
+
 
 function add() {
   const enteredNumber = +userInput.value;
