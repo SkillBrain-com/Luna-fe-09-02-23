@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 4.9375rem;
   background-color: #0072c6;
 }
@@ -37,7 +37,7 @@ ul > li > a {
 .aside-style {
   float: left;
   width: 8.125rem;
-  height: 95%;
+
   background-color: #f2f2f2;
   margin-top: 0.9375rem;
   margin-left: 0.9375rem;
@@ -89,7 +89,7 @@ section > div > p {
 
 .footer-blue-style {
   background-color: #0072c6;
-  width: 100%;
+  width: 100vw;
   margin: 3.125rem 0 0 0;
 }
 .footer-flex {
