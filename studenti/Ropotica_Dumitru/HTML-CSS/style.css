@@ -1,0 +1,125 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Shantell Sans", cursive;
+ 
+}
+/* .header-nav{
+display:flex;
+justify-content: center;
+flex-direction: column;
+position: static;
+width: 100%;
+} */
+.display-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+}
+
+/* HEADER */
+.header-content {
+  padding: 2rem 0 2rem 0;
+  background-color: rgb(65, 153, 255);
+  color: #fff;
+
+}
+/* NAVBAR */
+.navbar-content {
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(221, 219, 219);
+  padding: 1rem 2rem 1rem 2rem;
+ 
+}
+ul {
+  list-style-type: none;
+}
+
+/* ASIDE PART */
+.all-content {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 0.8rem;
+}
+aside {
+  width: 11rem;
+  background-color: rgb(245, 245, 245);
+  margin-right: 3rem;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
+}
+.aside-content {
+  flex-direction: column;
+}
+.ul-nav {
+  display: flex;
+  justify-content: end;
+  padding-right: 0.5rem;
+}
+
+/* BOX */
+.text-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.box-content {
+  width: 28rem;
+  border: 1px solid black;
+  padding: 1rem 0.5rem 3rem 0.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+/* FOOTER */
+footer{
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(65, 153, 255);
+  padding: 1rem 2rem 1rem 2rem;
+  width: 100%;
+
+}
+.footer1{
+  display: flex;
+  justify-content: start;
+}
+.footer2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer2 ul{
+  padding-left: 1rem;
+}
+
+/* media screen */
+
+@media screen and (max-width: 780px){
+ aside{
+  display: none;
+ }
+}
+@media screen and (max-width: 470px){
+  .box-content{
+    display: flex;
+    flex-direction: column;
+  }
+  footer{
+    display: flex;
+    width: 100%;
+  }
+ }
