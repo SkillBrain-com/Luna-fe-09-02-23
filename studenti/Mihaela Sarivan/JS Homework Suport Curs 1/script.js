@@ -19,14 +19,14 @@ function isDivisibleBy10(num) {
 
     let childNumber = 4;
     let name = "Mike";
-    let geographicalLocation = ["Londra"];
-    let workPlace = ["postas"];
+    let geographicalLocation = "Londra";
+    let workPlace = "postas";
 
     const person1 = {
         childNumber: 4,
         name: "Mike",
-        geographicalLocation: ["Londra"],
-        workPlace: ["postas"],
+        geographicalLocation: "Londra",
+        workPlace: "postas",
      }
 
      function greet(person1) {
