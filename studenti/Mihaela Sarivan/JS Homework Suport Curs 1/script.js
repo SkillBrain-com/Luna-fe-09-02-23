@@ -17,17 +17,17 @@ console.log(isDivisibleBy10(15));
 //primește 4 argumente: numărul de copii (N), numele partenerului (Z), locația geografică (Y), locul de muncă (X).
 //afișează pe ecran viitorul dvs. în felul următor: "Vei fi un X în Y, căsătorit cu Z și vei avea N copii."
 
-let childNumber = 4;
-let name = "Mike";
-let geographicalLocation = "Londra";
-let workPlace = "postas";
+    let childNumber = 4;
+    let name = "Mike";
+    let geographicalLocation = "Londra";
+    let workPlace = "postas";
 
-const person1 = {
-  childNumber: 4,
-  name: "Mike",
-  geographicalLocation: "Londra",
-  workPlace: "postas",
-};
+    const person1 = {
+        childNumber: 4,
+        name: "Mike",
+        geographicalLocation: "Londra",
+        workPlace: "postas",
+     }
 
 function greet(person1) {
   console.log("Buna," + " " + person1);
