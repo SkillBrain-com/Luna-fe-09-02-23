@@ -55,15 +55,16 @@ const addMovieHandler = () => {
 
   const newMovie = {
     info: {
-      set title(val) {
-        if(val.trim() === ''){
-            this._title = 'DEFAULT'
-        };
-        this._title = val;
-      },
-      get title(){
-        return this._title.toUpperCase;
-      },
+      // set title(val) {
+      //   if(val.trim() === ''){
+      //       this._title = 'DEFAULT'
+      //   };
+      //   this._title = val;
+      // },
+      // get title(){
+      //   return this._title.toUpperCase;
+      // },
+      title,
       [extraName]: extraValue,
     },
     id: Math.random().toString(),
@@ -73,8 +74,8 @@ const addMovieHandler = () => {
     }
   };
 
-  newMovie.info.title = '';
-  console.log(newMovie.info.title)
+  // newMovie.info.title = '';
+  // console.log(newMovie.info.title)
 
   movies.push(newMovie);
   renderMovies();
