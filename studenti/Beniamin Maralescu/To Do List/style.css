@@ -1,0 +1,118 @@
+/*========================================================
+          Sitewide Styles
+==========================================================*/
+/*multiple selector*/
+* {
+    padding: 0;
+  }
+  
+  body {
+    margin: 0 auto;
+    background: white;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  /*========================================================
+            Format Section
+  ========================================================*/
+  /*changing title style*/
+  h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #A0D468;
+    text-shadow: 2px 2px rgba(225, 225, 225, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  /*Changing input box style*/
+  input{
+    padding: 10px 1px;
+    padding-right: 20px;
+    margin: 0 auto;
+    width: 25%;
+    margin: 6px;
+    font-size: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.8);
+    background-color: white;
+    color: black;
+  }
+  
+  /*changing button box style*/
+  #clickMe{
+    border-style: none;
+    background: #A0D468;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  /*========================================================
+            List Section
+  ========================================================*/
+  /*move text to the right by 20px*/
+  span {
+    margin-left: 20px;
+    font-family: 'Helvetica', Arial, sans-serif;
+  }
+  
+  /*Edit list*/
+  #list_items {
+    color: black;
+    font-size: 16px;
+    border: none;
+    margin: 0 auto;
+    width: 35%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /*format the remove or delete button*/
+  .remove {
+    float: right;
+    background: rgb(231, 236, 237);
+    border-radius: 3px;
+    border: none;
+    color: #acb4c2;
+    font-size: 15px;
+    padding: 3px 5px;
+  }
+  
+  /*hightlight remove button when hover */
+  .remove:hover {
+    background: rgb(230, 250, 230);
+  }
+  
+  /*Format List*/
+  ol li {
+    text-align: left;
+    padding: 20px 0;
+  }
+  
+  /*Create a bullet before each list*/
+  ol li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    border-radius: 100%;
+    background: #A0D468;
+    display: block;
+  }
+  
+  /*Change color when the button is hover*/
+  ol li:hover {
+    background: #FAFAFA;
+  }
