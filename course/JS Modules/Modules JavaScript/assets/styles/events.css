@@ -37,13 +37,14 @@ button:active {
 }
 
 #long-one {
-  height: 3000000px;
+  height: 3000px;
 }
 
-li{
+li {
   padding: 1rem;
   border: 1px solid #ccc;
 }
+
 ul {
   list-style: none;
 }

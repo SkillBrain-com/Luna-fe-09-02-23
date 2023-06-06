@@ -9,6 +9,7 @@ class DOMHelper {
     const element = document.getElementById(elementId);
     const destinationElement = document.querySelector(newDestinationSelector);
     destinationElement.append(element);
+    element.scrollIntoView({behavior: 'smooth'})
   }
 }
 
@@ -53,11 +54,13 @@ class Tooltip extends Component {
   create() {
     const tooltipElement = document.createElement("div");
     tooltipElement.className = "card";
-    const tooltipTamplate = document.getElementById('tooltip');
+    const tooltipTamplate = document.getElementById("tooltip");
     console.log(tooltipTamplate);
     const tooltipBody = document.importNode(tooltipTamplate.content, true);
-    tooltipBody.querySelector('p').textContent = this.text;
+    tooltipBody.querySelector("p").textContent = this.text;
     tooltipElement.append(tooltipBody);
+
+    console.log(this.hostElement.getBoundingClientRect());
 
     const hostElPosLeft = this.hostElement.offsetLeft;
     const hostElPosTop = this.hostElement.offsetTop;
@@ -67,10 +70,9 @@ class Tooltip extends Component {
     const x = hostElPosLeft + 20;
     const y = hostElPosTop + hostElHeight - parentElementScroll - 10;
 
-    tooltipElement.style.position = 'absolute';
-    tooltipElement.style.left = x + 'px';
-    tooltipElement.style.top = y + 'px';
-
+    tooltipElement.style.position = "absolute";
+    tooltipElement.style.left = x + "px";
+    tooltipElement.style.top = y + "px";
 
     tooltipElement.addEventListener("click", this.closeTooltip);
     this.element = tooltipElement;
@@ -172,6 +174,19 @@ class App {
     finishedProjectsList.setSwitchHandlerFunction(
       activeProjectsList.addProject.bind(activeProjectsList)
     );
+    // const someScript = document.createElement('script');
+    // someScript.textContent = 'alert("Hi there")';
+    // document.head.append(someScript);
+    document
+      .getElementById("start-analytics-btn")
+      .addEventListener("click", this.startAnalytics);
+  }
+
+  static startAnalytics() {
+    const analyticsScript = document.createElement("script");
+    analyticsScript.src = "assets/scripts/analitycs.js";
+    analyticsScript.defer = true;
+    document.head.append(analyticsScript);
   }
 }
 
